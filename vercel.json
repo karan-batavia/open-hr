@@ -1,5 +1,11 @@
 {
   "version": 2,
   "installCommand": "pnpm install",
-  "buildCommand": "pnpm build"
+  "buildCommand": "pnpm build",
+  "regions": ["sin1"],
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  }
 }
